@@ -8,7 +8,11 @@ function fetchBooks() {
 }
 
 function fetchHouses() {
-  
+  fetch('https://anapioficeandfire.com/api/houses')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(renderBooks)
 }
 
 function renderBooks(json) {
