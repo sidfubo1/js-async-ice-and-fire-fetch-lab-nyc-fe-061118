@@ -12,7 +12,7 @@ function fetchHouses() {
     .then(function(response) {
       return response.json();
     })
-    .then(renderBooks)
+    .then(renderHouses)
 }
 
 function renderBooks(json) {
