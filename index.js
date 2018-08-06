@@ -25,7 +25,7 @@ function renderBooks(json) {
 }
 
 function renderHouses(json) {
-  $("#div-houses").html(json.name);
+  $("#div-houses p").html(json.name);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
