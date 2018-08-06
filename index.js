@@ -24,6 +24,10 @@ function renderBooks(json) {
   })
 }
 
+function renderHouses(json) {
+  
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   fetchBooks()
 })
