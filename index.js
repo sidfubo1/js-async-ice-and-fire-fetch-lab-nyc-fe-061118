@@ -7,13 +7,13 @@ function fetchBooks() {
     .then(renderBooks)
 }
 
-function fetchHouses() {
-  fetch('https://anapioficeandfire.com/api/houses')
-    .then(function(response) {
-      return response.json();
-    })
-    .then(renderHouses)
-}
+// function fetchHouses() {
+//   fetch('https://anapioficeandfire.com/api/houses')
+//     .then(function(response) {
+//       return response.json();
+//     })
+//     .then(renderHouses)
+// }
 
 function renderBooks(json) {
   debugger;
@@ -25,9 +25,9 @@ function renderBooks(json) {
   })
 }
 
-function renderHouses(json) {
-  $("#div-houses p").append(json.name);
-}
+// function renderHouses(json) {
+//   $("#div-houses p").append(json.name);
+// }
 
 document.addEventListener('DOMContentLoaded', function() {
   fetchBooks()
